@@ -85,7 +85,7 @@ function searchNumberFloats(string) {
       for (let i = 1; i < array.length; i++) {
         if (parseInt(array[index + i], 10) >= 0) {
           continue;
-        } else if (parseInt(array[index + 1], 10) !== 0) {
+        } else if (isNaN(array[index + 1]) == true) {
           return array;
         } else {
           let delateCount = index + i;
@@ -113,6 +113,7 @@ function searchNumberFloats(string) {
   });
   return array;
 }
+console.log(searchNumberFloats("1-(2+3)"));
 //калькулятор
 function simpleCalculate(array) {
   const a = parseFloat(array[0], 10);
