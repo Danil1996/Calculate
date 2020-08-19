@@ -23,7 +23,6 @@
         document.querySelectorAll('#calculator .btn').forEach(function (button) {
             button.addEventListener('click', onButtonClick);
         });
-     
         function onButtonClick(e) {
             if (e.target.innerHTML === 'AC') {
                 textArea.innerHTML = '0';
@@ -41,3 +40,4 @@
             }
         }
     });
+    

@@ -113,7 +113,6 @@ function searchNumberFloats(string) {
   });
   return array;
 }
-console.log(searchNumberFloats("1-(2+3)"));
 //калькулятор
 function simpleCalculate(array) {
   const a = parseFloat(array[0], 10);

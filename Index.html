@@ -15,7 +15,7 @@
 
       <div id="calculator">
         <div id="calc">
-            <textarea id=inputVal disabled="disabled">0</textarea>
+            <textarea id="inputVal" onkeyup = "this.value = this.value.replace(/[a-zA-Z\!\@\#\$\%\&\_\{\}\[\]\;\:\<\>\,]/g, '')">0</textarea>
         </div>
 
     <div id="History">
