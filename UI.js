@@ -39,5 +39,17 @@
                 textArea.innerHTML += e.target.innerHTML;
             }
         }
+        document.querySelector('body').addEventListener('keydown',onEnterpress)
+        function onEnterpress(enter) {
+                 if(enter.keyCode === 13){
+                    let result = doubleOperands(searchNumberFloats(validationOfString(validationBrackets(textArea.innerHTML))));
+                    alert (fuckingCalculator(result));
+                    let history = document.getElementById("History");
+                    let newHistory = document.createElement("p");
+                    newHistory.innerHTML = `${textArea.value} = ${result}`;
+                    history.appendChild(newHistory);
+                }
+            };
+        
     });
     
