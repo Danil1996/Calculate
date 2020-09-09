@@ -27,7 +27,7 @@
             if (e.target.innerHTML === 'AC') {
                 textArea.innerHTML = '0';
             } else if (e.target.innerHTML === '=') {
-                let result = doubleOperands(searchNumberFloats(validationOfString(validationBrackets(textArea.innerHTML))));
+                let result = doubleOperands(searchNumberFloats(validationOfString(validationBrackets(textArea.value))));
                 alert (fuckingCalculator(result));
                 let history = document.getElementById("History");
                 let newHistory = document.createElement("p");
@@ -42,7 +42,7 @@
         document.querySelector('body').addEventListener('keydown',onEnterpress)
         function onEnterpress(enter) {
                  if(enter.keyCode === 13){
-                    let result = doubleOperands(searchNumberFloats(validationOfString(validationBrackets(textArea.innerHTML))));
+                    let result = doubleOperands(searchNumberFloats(validationOfString(validationBrackets(textArea.value))));
                     alert (fuckingCalculator(result));
                     let history = document.getElementById("History");
                     let newHistory = document.createElement("p");
